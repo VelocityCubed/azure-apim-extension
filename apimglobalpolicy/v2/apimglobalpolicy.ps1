@@ -99,7 +99,7 @@ shared VNET
 				$policyapiurl=	"$($baseurl)/policies/policy?api-version=2021-08-01"
 				$JsonPolicies = "{
 				  `"properties`": {
-      					`"format`":`"xml`"
+      					`"format`":`"xml`",
 					`"value`":`""+$PolicyContent+"`"
 					}
 				}"
