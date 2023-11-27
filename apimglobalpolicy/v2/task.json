@@ -1,9 +1,9 @@
 {
-  "id": "10e68a6e-a7d7-4f5d-9911-54cf82e989b4",
+  "id": "2f6ffeeb-ac1a-4047-84ec-f6326c657e29",
   "name": "apimglobalpolicy",
   "friendlyName": "API Management - Create or Update a Global Policy",
   "description": "API Management - Create or Update a Global Policy",
-  "author": "Stephane Eyskens",
+  "author": "Velocity Cubed",
   "helpMarkDown": "API Management - Create or Update a Global Policy",
   "category": "Utility",
   "visibility": [

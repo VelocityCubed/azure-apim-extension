@@ -1,9 +1,9 @@
 {
-  "id": "caee5262-b7ce-48c9-b5f7-70c586148ff8",
+  "id": "dac5b134-cf38-4cf5-8d08-86c668cc1b29",
   "name": "apimversioned",
   "friendlyName": "API Management - Create or Update Versioned API",
   "description": "API Management - Create or Update Versioned API",
-  "author": "Stephane Eyskens",
+  "author": "Velocity Cubed",
   "helpMarkDown": "API Management - Create/Update API",
   "category": "Utility",
   "visibility": [

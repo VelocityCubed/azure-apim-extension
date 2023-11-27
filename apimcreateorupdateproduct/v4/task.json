@@ -1,9 +1,9 @@
 {
-  "id": "9a90d8a1-59bd-4e6d-a272-395ebca0781d",
+  "id": "67174b9a-6f33-42a9-9af9-a263a0a010a1",
   "name": "apimcreateorupdateproduct",
   "friendlyName": "API Management - Create or update product",
   "description": "API Management - Create or update product",
-  "author": "Stephane Eyskens",
+  "author": "Velocity Cubed",
   "helpMarkDown": "API Management - Create or update product",
   "category": "Utility",
   "visibility": [

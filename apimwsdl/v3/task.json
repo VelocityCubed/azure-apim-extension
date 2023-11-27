@@ -1,9 +1,9 @@
 {
-  "id": "9bfd810a-5e2b-4871-95d8-ae6e677d4224",
+  "id": "96767f9b-b268-4c9b-901d-7c1f704b9866",
   "name": "apimwsdl",
   "friendlyName": "API Management - Create or Update API from WSDL",
   "description": "API Management - Create or update API from WSDL",
-  "author": "Stephane Eyskens",
+  "author": "Velocity Cubed",
   "helpMarkDown": "API Management - Create/Update API from WSDL",
   "category": "Utility",
   "visibility": [
@@ -250,11 +250,9 @@
       "label": "Microsoft API Version",
       "required": true,
       "helpMarkDown": "Which version of the Management API should be used?",
-      "defaultValue": "2017-03-01",
+      "defaultValue": "2021-08-01",
       "options": {
-        "2017-03-01": "2017-03-01",
-        "2018-01-01":"2018-01-01"
-      },
+        "2021-08-01": "2021-08-01"      },
       "properties": {
         "EditableOptions": "True"
       }

@@ -1,9 +1,9 @@
 {
-  "id": "fbb5ba7e-f837-4f46-b31e-f34c117fdd05",
+  "id": "c0a03850-c22a-4692-aaed-03dc4b9f5b92",
   "name": "apim",
   "friendlyName": "API Management - Create or Update API",
   "description": "API Management - Create or update API",
-  "author": "Stephane Eyskens",
+  "author": "Velocity Cubed",
   "helpMarkDown": "API Management - Create/Update API",
   "category": "Utility",
   "visibility": [
@@ -13,7 +13,7 @@
   "version": {
     "Major": "5",
     "Minor": "0",
-    "Patch": "2"
+    "Patch": "3"
   },
   "minimumAgentVersion": "1.95.0",
   "instanceNameFormat": "API Management - Create/Update API $(message)",
@@ -25,7 +25,6 @@
       "defaultValue": "",
       "required": true,
       "helpMarkDown": "Azure Resource Manager subscription to configure before running PowerShell"
-
     },
     {
       "name": "ResourceGroupName",
@@ -73,7 +72,7 @@
       "defaultValue": "v2",
       "options": {
         "v2": "v2",
-        "v3":"v3"        
+        "v3": "v3"
       }
     },
     {
@@ -85,9 +84,9 @@
       "defaultValue": "json",
       "options": {
         "json": "json",
-        "yaml":"yaml"        
+        "yaml": "yaml"
       },
-     "visibleRule": "OpenAPISpec=v3"
+      "visibleRule": "OpenAPISpec=v3"
     },
     {
       "name": "Authorization",
@@ -98,8 +97,8 @@
       "defaultValue": "None",
       "options": {
         "None": "None",
-        "OAuth":"OAuth",
-        "OpenID":"OpenID Connect"
+        "OAuth": "OAuth",
+        "OpenID": "OpenID Connect"
       }
     },
     {
@@ -133,8 +132,8 @@
       "defaultValue": "Url",
       "options": {
         "Url": "Url",
-        "Code":"Code",
-        "Artifact":"Build Artifact"
+        "Code": "Code",
+        "Artifact": "Build Artifact"
       }
     },
     {
@@ -170,12 +169,11 @@
       "label": "API Name",
       "required": true,
       "helpMarkDown": "New or existing API"
-
     },
     {
       "name": "DisplayName",
       "type": "string",
-      "label": "API Display Name",      
+      "label": "API Display Name",
       "helpMarkDown": "Leave it blank to reuse the name"
     },
     {
@@ -190,7 +188,7 @@
       "type": "boolean",
       "label": "Subscription Required",
       "helpMarkDown": "Subscription key is required to access this API",
-      "defaultValue":true
+      "defaultValue": true
     },
     {
       "name": "TemplateSelector",
@@ -201,7 +199,7 @@
       "defaultValue": "None",
       "options": {
         "None": "None",
-        "Artifact":"Artifact",
+        "Artifact": "Artifact",
         "CacheLookup": "Cache lookup",
         "CORS": "CORS",
         "Custom": "Custom",
@@ -212,7 +210,7 @@
         "QuotaByKey": "QuotaByKey",
         "HeaderCheck": "HeaderCheck"
       }
-    },    
+    },
     {
       "name": "None",
       "type": "string",
@@ -315,10 +313,9 @@
       "label": "Microsoft API Version",
       "required": true,
       "helpMarkDown": "Which version of the Management API should be used?",
-      "defaultValue": "2017-03-01",
+      "defaultValue": "2021-08-01",
       "options": {
-        "2017-03-01": "2017-03-01",
-        "2018-01-01":"2018-01-01"
+        "2021-08-01": "2021-08-01"
       },
       "properties": {
         "EditableOptions": "True"
@@ -361,7 +358,7 @@
       "endpointUrl": "{{endpoint.url}}/subscriptions/{{endpoint.subscriptionId}}/resourceGroups/$(ResourceGroupName)/providers/Microsoft.ApiManagement/service/$(ApiPortalName)/openidConnectProviders?api-version=2018-01-01",
       "resultSelector": "jsonpath:$.value[*]",
       "resultTemplate": "{\"Value\" : \"{{{name}}}\", \"DisplayValue\" : \"{{{properties.displayName}}}\" }"
-    }     
+    }
   ],
   "execution": {
     "PowerShell3": {

@@ -1,9 +1,9 @@
 {
-  "id": "2122de77-e114-41aa-973c-2daff243677a",
+  "id": "1f5df493-c68c-4847-be79-b56b84300e43",
   "name": "apisecuritychecker",
   "friendlyName": "API Security Checker",
   "description": "Makes sure all endpoints are secured",
-  "author": "Stephane Eyskens",
+  "author": "Velocity Cubed",
   "helpMarkDown": "Makes sure all endpoints are secured",
   "category": "Utility",
   "visibility": [

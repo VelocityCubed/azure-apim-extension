@@ -1,9 +1,9 @@
 {
-  "id": "cad4b382-7e58-4e06-917a-d301ab1d52d9",
+  "id": "05630693-61b0-4749-9524-c8f71b75b8b9",
   "name": "apimfunction",
   "friendlyName": "API Management - Create or Update API on Azure Functions (v1)",
   "description": "API Management - Create or Update API on Azure Functions (v1)",
-  "author": "Stephane Eyskens",
+  "author": "Velocity Cubed",
   "helpMarkDown": "Create or Update API on Azure Functions",
   "category": "Utility",
   "visibility": [

@@ -1,9 +1,9 @@
 {
-  "id": "a67d9016-264e-4df8-b47e-85ea302d09b3",
+  "id": "b623ab8d-8aad-4d7e-8ac6-0fb55658fb04",
   "name": "apimoperationpolicies",
   "friendlyName": "API Management - Set or update an operation policy",
   "description": "API Management - Set or update an operation policy",
-  "author": "Stephane Eyskens",
+  "author": "Velocity Cubed",
   "helpMarkDown": "API Management - Set or update an operation policy",
   "category": "Utility",
   "visibility": [
