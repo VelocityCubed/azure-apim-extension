@@ -8,6 +8,8 @@ The purpose of this extension is to bring Azure API Management into VSTS as part
 is good to associate the release of your backends APIs with their corresponding facade APIs published against the API Gateway. On top of the API Management integration, the extension also 
 ships with an API Security Checker that helps validating that all endpoints of an API are well secured, this is of course only applicable to non-public APIs.
 # Release Notes
+## v3.5.9
+* Removed all tasks not upgraded to latest apim version - Velocity Cubed
 ## v3.5.8
 * Updated API Create or Add to support version 2021-08-01 - Velocity Cubed
 ## v3.5.2
@@ -80,27 +82,8 @@ API description and display name come from the OpenAPI definition itself, that's
 # Policies
 A few tasks allow to set policies at product and/or API level. They come with some pre-defined policies which you can override to adjust them to specific needs. You can easily use other policies by getting the default boilerplate config from the APIM Portal.
 # Tasks included in the extension
-## API Management - Create or update product
-This task allows you to create a new product or update an existing one. The following screenshot illustrates the task:  
-![API Product](images/product.png "API Product")
-  <br/>Where parameters such as approval required and subscription limits may be defined as well as more advanced policies using one of the provided policies or a custom one.
-
 ## API Management - Create or update API
 This task allows you to create a new Gateway API or update an existing one, against backend APIs.   
 ![API](images/api.png "API")
   <br/>where you reference the Swagger location as well as the API suffix and optionally a policy that governs the API such as a JWT validation policy.
   Note that you can create gateway APIs based on WSDL files.
-## API Management - Create or update versioned API
-This task allows you to create a new Versioned Gateway API or update an existing one, against backend APIs. The reason why versioning has been put in a separate task is to make it clear for the VSTS Release Managers and to be compliant with the old way of working with APIM which did not support versioning in the past. 
-![Versioned API](images/apiv.png "Versioned API")
-  <br/>where you may also define the versioning scheme.
-## API Management - Create or update API against Azure Functions
-This task allows you to create a new Gateway API or update an existing one, against Azure Functions that are protected with a code in the Function URL. For each and every function, a corresponding API Operation is created with a specific policy that injects the function's secret as a querystring parameter.  
-![API functions](images/apif.png "API functions")
- <br/>where the only thing you have to do is to map the new API you create with the target function site.
-## API Management - Create or update versioned API against Azure Functions
-Same as above but in a versioned way.
-## API Security Checker 
-This very basic task parses the Swagger definition of an API (or MVC apps) to check whether all the exposed endpoints are secured. Every return code that differs from 401 or 302 (redirection to the login page) are marked unsafe. If at least one unsafe endpoint is discovered, the task fails to complete and all the tested endpoints appear in the logs.  
-![API Security Check](images/apisc.png "API Security Check")
-  <br/>Since this task needs to call the target API, the only way to provide the swagger definition is via its URL. If the Swagger endpoint is protected via a key, just provide it as part of the URL.

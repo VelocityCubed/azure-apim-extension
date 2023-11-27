@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "apim",
   "name": "API Management Suite",
-  "version": "3.5.8",
+  "version": "3.5.9",
   "publisher": "VelocityCubed",
   "tags": [
     "API",
