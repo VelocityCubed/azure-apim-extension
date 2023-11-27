@@ -323,8 +323,9 @@ shared VNET
 			{
 				$policyapiurl=	"$($baseurl)/apis/$($newapi)/policies/policy?api-version=$($MicrosoftApiManagementAPIVersion)"
 				$JsonPolicies = "{
-				  `"properties`": {					
-					`"policyContent`":`""+$PolicyContent+"`"
+				  `"properties`": {
+      					`"type`":`"xml`",
+					`"value`":`""+$PolicyContent+"`"
 					}
 				}"
 				Write-Host "Linking policy to API USING $($policyapiurl)"
