@@ -8,6 +8,8 @@ The purpose of this extension is to bring Azure API Management into VSTS as part
 is good to associate the release of your backends APIs with their corresponding facade APIs published against the API Gateway. On top of the API Management integration, the extension also 
 ships with an API Security Checker that helps validating that all endpoints of an API are well secured, this is of course only applicable to non-public APIs.
 # Release Notes
+## v3.5.8
+* Updated API Create or Add to support version 2021-08-01 - Velocity Cubed
 ## v3.5.2
 * Added the possibility to use previously created / updated operations - Serge Aradj
 ## v3.5.1
